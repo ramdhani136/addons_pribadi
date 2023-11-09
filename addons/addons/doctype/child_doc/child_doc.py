@@ -6,7 +6,7 @@ from frappe.model.document import Document
 
 class ChildDoc(Document):
     def validate(self):
-        # self.get_value()
+        self.get_value()
         self.get_document()
 
     def get_value(self):
