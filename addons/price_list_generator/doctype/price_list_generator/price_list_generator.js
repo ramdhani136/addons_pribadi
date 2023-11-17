@@ -5,7 +5,7 @@ frappe.ui.form.on("Price List Generator", {
 	onload(frm) {
 	  if (frm.doc.parent_item_group) {
 		frappe.db.get_value(
-		  "Item Groupd",
+		  "Item Group",
 		  { name: frm.doc.parent_item_group },
 		  "is_group",
 		  function (value) {
