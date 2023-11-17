@@ -1,1 +1,2 @@
 Addons
+Price List Generator
