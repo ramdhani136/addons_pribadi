@@ -25,7 +25,7 @@ frappe.ui.form.on("Price List Generator", {
 		frm.set_query("item_group", function () {
 		  return {
 			query:
-			  "addons.addons.doctype.price_list_generator.price_list_generator.query_item_group",
+			  "addons.price_list_generator.doctype.price_list_generator.price_list_generator.query_item_group",
 			filters: {
 			  field_parent_item_group: cur_frm.doc.parent_item_group,
 			},
@@ -56,7 +56,7 @@ frappe.ui.form.on("Price List Generator", {
 		  if (item_code.item_code) {
 			frappe.call({
 			  method:
-				"addons.addons.doctype.price_list_generator.price_list_generator.get_history",
+				"addons.price_list_generator.doctype.price_list_generator.price_list_generator.get_history",
 			  args: {
 				filter_by: frm.doc.filter_by,
 				item_code: item_code.item_code,
@@ -95,7 +95,7 @@ frappe.ui.form.on("Price List Generator", {
 		frm.set_query("item_group", function () {
 		  return {
 			query:
-			  "addons.addons.doctype.price_list_generator.price_list_generator.query_item_group",
+			  "addons.price_list_generator.doctype.price_list_generator.price_list_generator.query_item_group",
 			filters: {
 			  field_parent_item_group: cur_frm.doc.parent_item_group,
 			},
@@ -104,7 +104,7 @@ frappe.ui.form.on("Price List Generator", {
   
 		frappe.call({
 		  method:
-			"addons.addons.doctype.price_list_generator.price_list_generator.get_history",
+			"addons.price_list_generator.doctype.price_list_generator.price_list_generator.get_history",
 		  args: {
 			filter_by: frm.doc.filter_by,
 			item_code: frm.doc.parent_item_group,
@@ -123,7 +123,7 @@ frappe.ui.form.on("Price List Generator", {
 	  if (frm.doc.item_group) {
 		frappe.call({
 		  method:
-			"addons.addons.doctype.price_list_generator.price_list_generator.get_history",
+			"addons.price_list_generator.doctype.price_list_generator.price_list_generator.get_history",
 		  args: {
 			filter_by: frm.doc.filter_by,
 			item_code: frm.doc.item_group,
@@ -146,7 +146,7 @@ frappe.ui.form.on("Price List Generator", {
 	  if (item_code.item_code) {
 		frappe.call({
 		  method:
-			"addons.addons.doctype.price_list_generator.price_list_generator.get_history",
+			"addons.price_list_generator.doctype.price_list_generator.price_list_generator.get_history",
 		  args: {
 			filter_by: frm.doc.filter_by,
 			item_code: item_code.item_code,
